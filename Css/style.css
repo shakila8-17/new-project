@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #fad0c4 0%;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    body {
+      background-color: #fad0c4 0%;
+      width: 100%;
+    }
+    .video{
+        width: 50%;
+        height: 50%;
+    }
+  }
+
+  /* تبلت */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      background-color:#fad0c4 0%;
+      width: 100%;
+    }
+    .video{
+        width: 50%;
+        height: 50%;
+    }
+  }
+
+  /* دسکتاپ */
+  @media (min-width: 1025px) {
+    body {
+      background-color: #fad0c4 0%;
+      width: 100%;
+    }
+  }
+
+h1{
+    font-family:cursive;
+    text-align: center;
+    margin:30px 0;
+}
+h1::first-letter{
+    color: #f09b83;
+    font-style: italic;
+    font-size: 50px;
+}
+.video{
+    border: solid 5px #fff;
+    box-shadow: 5px 5px 5px #fff;
+    width: 50%;
+}
+.v-div{
+   display: inline-block;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+}
+.buttom{
+    padding: 15px 10px;
+    margin: 10px 5px;
+    background-color: #f09b83;
+    border: #f09b83;
+    border-radius: 10%;
+    font-weight: bold;
+}
+.buttom:active,.buttom:hover{
+    background-color: #fff;
+    color: #f5805f;
+
+}
+.buttom2{
+    padding: 15px 10px;
+}
+.div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+

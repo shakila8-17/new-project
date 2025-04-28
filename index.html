@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>My Theater</title>
+    <link rel="shortcut icon" href="./media/download.png" type="image/x-icon">
+    
+</head>
+<body>
+    <h1>Shakila Sabury Theater</h1>
+    <div class="v-div">
+        <!-- <marquee behavior="alternate"style="box-shadow: violet; border: solid 5px black;"> -->
+        <video  controls class="video">
+            <source src="./media/video.mp4" type="video/mp4">
+            <source src="./media/video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div> 
+    <br>
+    <div class="div2">
+        <a href="./media/video.mp4" download>
+            <button class="buttom">Download Video</button>
+        </a>
+        <button onclick="playAgain()" class="buttom">Play Again🎬</button>
+    
+        <button onclick="rateMovie()" class="buttom2 buttom" >⭐️⭐️ Rate Movie ⭐️⭐️</button>
+    </div>    
+        <script>
+        function playAgain() {
+        const video = document.querySelector('video');
+        if (video) {
+            video.currentTime = 0;
+            video.play();
+        }
+        }
+        function rateMovie() {
+        alert("Thank you for rating the movie!");
+        }
+    </script>    
+    
+</body>
+</html>
